@@ -1,0 +1,65 @@
+<div class="container-fluid px-0 py-3">
+    <app-navbar></app-navbar>
+    <div class="row">
+        <div class="col-md-3 px-5">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-md-9">
+            <form style="width: 800px;" class="mx-auto mt-5 mb-4 p-5 border border-primary border-1 rounded-5">
+                <!-- <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+                <h1 class="text-center text-primary" style="font-size: 35px;"><b>Add Account</b></h1>
+                <div class="row "></div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Select Bank
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><button class="dropdown-item" type="button">SBI</button></li>
+                                <li><button class="dropdown-item" type="button">Axis Bank</button></li>
+                                <li><button class="dropdown-item" type="button">HDFC</button></li>
+                                <li><button class="dropdown-item" type="button">PNB</button></li>
+                                <li><button class="dropdown-item" type="button">Union Bank</button></li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <h2><b>Bank Details</b><hr style="height:2px;border-width:0;color:rgb(18, 14, 230);background-color:blue"></h2>
+                        
+                        
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form6Example3" class="form-control" />
+                            <label class="form-label" for="form6Example3">Account number</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form6Example3" class="form-control" />
+                            <label class="form-label" for="form6Example3">IFSC Code</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form6Example3" class="form-control" />
+                            <label class="form-label" for="form6Example3">Account Holder name</label>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-4 mx-auto" style="width: 200px;">Add Bank
+
+                    </button>
+
+                </div>
+             
+
+            </form>
+        </div>
+        <div class="">
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>

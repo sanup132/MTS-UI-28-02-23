@@ -1,0 +1,53 @@
+<div class="container-fluid px-0 py-3">
+    <app-navbar></app-navbar>
+    <div class="row">
+        <div class="col-md-3 px-5">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-md-9">
+            <form style="width: 800px;" class="mx-auto mt-5 mb-4 p-5 border border-primary border-1 rounded-5">
+                <!-- <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+                <h1 class="text-center text-primary" style="font-size: 35px;"><b>Trasactions</b></h1>
+                <div class="row "></div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="User">Account:</label>
+                        <select name="User" id="User">
+                            <option value="User1">User1</option>
+                            <option value="User2">User2</option>
+                            <option value="User3">User3</option>
+                            <option value="Userz">Userz</option>
+                        </select>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="mb-2">
+                            <label for="amount" class="form-label">amount</label>
+                            <input type="text" class="form-control" id="amount">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-4 mx-auto" style="width: 200px;">Transfer</button>
+
+                </div>
+
+            </form>
+        </div>
+        <div class="">
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div *ngFor="let user of allUserAccounts">
+            <h1>{{user.f_name}}</h1>
+            <h1>{{user.l_name}}</h1>
+        </div>
+    </div>
+</div>
